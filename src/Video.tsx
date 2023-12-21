@@ -1,26 +1,18 @@
 import { Composition } from 'remotion';
-import AnimatedCodeExamples from './animated-code-examples/AnimatedCodeExamples';
-import PlaygroundComposition from './playground/PlaygroundComposition';
+import { MapAsync } from "./animations/meteor3/MapAsync";
+import { getFrame } from "./utils/utils";
 import './style.css';
 
 export const RemotionVideo: React.FC = () => {
   return (
     <>
       <Composition
-        id="PlaygroundComposition"
-        component={PlaygroundComposition}
-        durationInFrames={240}
+        id="MapAsync"
+        component={MapAsync}
+        durationInFrames={getFrame(20)}
         fps={30}
         width={1280}
         height={720}
-      />
-      <Composition
-        id="AnimatedCodeExamples"
-        component={AnimatedCodeExamples}
-        durationInFrames={214}
-        fps={30}
-        width={1280}
-        height={600}
       />
     </>
   );
