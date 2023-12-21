@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.45",
+    "@types/react-syntax-highlighter": "^15.5.11",
     "@types/web": "^0.0.128",
     "autoprefixer": "10.4.4",
     "postcss": "8.4.12",
